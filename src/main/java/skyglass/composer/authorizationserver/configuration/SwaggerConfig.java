@@ -23,7 +23,7 @@ public class SwaggerConfig {
 			"Mykhailo Skliar", "https://github.com/skyglass", "skyglass2001@gmail.com");
 
 	public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
-			"Awesome API Title", "Awesome API Description", "1.0",
+			"Awesome API Title 1.0.0", "Awesome API Description", "1.0",
 			"urn:tos", DEFAULT_CONTACT,
 			"Apache 2.0", "http://www.apache.org/licenses/LICENSE-2.0", Arrays.asList());
 
@@ -36,7 +36,7 @@ public class SwaggerConfig {
 				.apiInfo(DEFAULT_API_INFO)
 				.produces(DEFAULT_PRODUCES_AND_CONSUMES)
 				.consumes(DEFAULT_PRODUCES_AND_CONSUMES)
-				.protocols(new HashSet<>(Arrays.asList("HTTP")))
+				.protocols(new HashSet<>(Arrays.asList("HTTPS")))
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("skyglass.composer.authorizationserver.users.controllers")).paths(PathSelectors.any())
 				.build();
