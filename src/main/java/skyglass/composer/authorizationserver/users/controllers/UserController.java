@@ -30,7 +30,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.server.ResponseStatusException;
 
-import io.swagger.annotations.ApiOperation;
 import skyglass.composer.authorizationserver.users.dtos.EmailMessage;
 import skyglass.composer.authorizationserver.users.dtos.UserModel;
 import skyglass.composer.authorizationserver.users.entities.User;
@@ -86,7 +85,6 @@ public class UserController {
 	// TO UNPROTECT @PreAuthorize("hasAnyRole('ROLE_MODERATOR','ROLE_ADMIN')")
 	@GetMapping("/user/{username}")
 	@ResponseStatus(HttpStatus.OK)
-	@ApiOperation(value = "Find 5 closest locations by user's current latitude and longitude", notes = "Use https://www.where-am-i.net/ to get your current coordinates")
 	public UserModel getUserByUsername(@PathVariable("username") String userName) {
 
 		User user = userRepository.findById(userName)

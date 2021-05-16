@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import io.swagger.annotations.ApiOperation;
 import skyglass.composer.authorizationserver.users.entities.User;
 import skyglass.composer.authorizationserver.users.repositories.UserRepository;
 import skyglass.composer.authorizationserver.users.services.UserService;
@@ -33,7 +32,6 @@ public class AdminUserController {
 
 	@PostMapping("/adminuser")
 	@ResponseStatus(HttpStatus.OK)
-	@ApiOperation(value = "Find location by uuid", notes = "Also returns a link to retrieve all locations with rel - all-locations")
 	public void createUser(@RequestBody @Valid User user) {
 
 		if (userRepository.findById(user.getUsername()).isPresent()) {
