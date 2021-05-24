@@ -143,7 +143,7 @@ $ aws s3api create-bucket --bucket {YOUR_S3_BUCKET_NAME} \
 
 
 
-## Step-02: Setup your Terraform environment
+## Step-02: Setup your local Terraform environment
 
 - create private and public SSH Keys. Terraform will use them to run scripts on your EC2 instances:
 
