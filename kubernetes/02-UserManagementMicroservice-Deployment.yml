@@ -24,6 +24,7 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8095
+              hostPort: 8095            
           env:
             - name: DB_HOSTNAME
               value: "mysql"
@@ -41,21 +42,7 @@ spec:
             - name: NOTIFICATION_SERVICE_HOST
               value: "notification-clusterip-service"
             - name: NOTIFICATION_SERVICE_PORT
-              value: "8096"                            
-          livenessProbe:
-            exec:
-              command:
-                - /bin/sh
-                - -c
-                - nc -z localhost 8095
-            initialDelaySeconds: 30
-            periodSeconds: 10
-          readinessProbe:
-            httpGet:
-              path: /usermgmt/health-status
-              port: 8095
-            initialDelaySeconds: 30
-            periodSeconds: 10          
+              value: "8096"                                   
 ---
 # Kubernetes Secrets
 apiVersion: v1
