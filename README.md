@@ -143,7 +143,7 @@ $ aws s3api create-bucket --bucket {YOUR_S3_BUCKET_NAME} \
 
 
 
-## Step-02: Setup your Terraform environent
+## Step-02: Setup your Terraform environment
 
 - create private and public SSH Keys. Terraform will use them to run scripts on your EC2 instances:
 
@@ -247,7 +247,9 @@ kubectl apply -f ../kubernetes
 
 
 
-## Congratulations! You sucessfully deployed Minimal Kubernetes Microservice on AWS with Terraform and K3S!
+## Congratulations! You sucessfully created Minimal Kubernetes Cluster on AWS with Terraform and K3S!
+## Now you can deploy your own docker containers to this cluster with minimal costs from AWS!
+## You significantly reduced your AWS bills by removing AWS EKS and NAT gateway!
 
 
 
