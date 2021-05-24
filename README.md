@@ -247,9 +247,9 @@ kubectl apply -f ../kubernetes
 
 
 
-## Congratulations! You sucessfully created Minimal Kubernetes Cluster on AWS with Terraform and K3S!
-## Now you can deploy your own docker containers to this cluster with minimal costs from AWS!
-## You significantly reduced your AWS bills by removing AWS EKS and NAT gateway!
+### Congratulations! You sucessfully created Minimal Kubernetes Cluster on AWS with Terraform and K3S!
+### Now you can deploy your own docker containers to this cluster with minimal costs from AWS!
+### You significantly reduced your AWS bills by removing AWS EKS and NAT gateway!
 
 
 
