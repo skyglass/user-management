@@ -5,7 +5,8 @@ REST API for user management microservice with swagger UI is available on
 
 # Microservices Deployment on AWS with Terraform and K3S:
 
-## Step 01 - Setup terraform account on AWS (skip to Step 02, if you already have working Terraform account with all permissions)
+## Step 01 - Setup terraform account on AWS 
+### (skip to Step 02, if you already have working Terraform account with all permissions)
 
 ### Setting Up an AWS Operations Account
 
