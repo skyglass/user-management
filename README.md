@@ -171,6 +171,8 @@ dbpassword = "s00p3rS3cr3t"
 
 - make sure your provide correct "**certifcate_arn**" for your registered domain. You need to register your domain and create certificate for your domain in AWS
 
+- replace "**skyglass-terraform**" in "**backends.tf**" with the name of your S3 bucket, created in "**Step 01**"
+
 
 - run the following commands:
 
