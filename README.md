@@ -240,7 +240,7 @@ kubectl apply -f ../kubernetes
 
 - let's assume that "**DNS name**" of your Load Balancer is "**mtc-loadbalancer.com**"
 
-- let's assume that your correctly registered your domain, created hosted zone, registered AWS SSL Certificate for your domain and created "**CNAME**" record with the name "**users.test.com**" and the value "**mtc-loadbalancer.com**"
+- let's assume that you correctly registered your domain, created hosted zone, registered AWS SSL Certificate for your domain and created "**CNAME**" record with the name "**users.test.com**" and the value "**mtc-loadbalancer.com**"
 
 - go to "**https://users.test.com/usermgmt/swagger-ui/index.html"
 
