@@ -142,6 +142,7 @@ $ aws s3api create-bucket --bucket {YOUR_S3_BUCKET_NAME} \
 
 
 
+
 ## Step-02: Setup your Terraform environent
 
 - create private and public SSH Keys. Terraform will use them to run scripts on your EC2 instances:
@@ -190,6 +191,7 @@ export KUBECONFIG=./ks3/k3s.yaml
 
 
 
+
 ## Step-03: Create "user-management:1.0.0" docker image and push it to docker hub
 
 - go back to the root directory of this github repository
@@ -206,6 +208,8 @@ with the name of your docker hub repository
 mvn clean install
 docker push test/user-management:1.0.0
 ````
+
+
 
 ## Step-04: Deploy "user-management" microservice to AWS:
 
@@ -243,7 +247,9 @@ kubectl apply -f ../kubernetes
 
 
 
-### Congratulations! You sucessfully deployed Minimal Kubernetes Microservice on AWS with Terraform and K3S!
+## Congratulations! You sucessfully deployed Minimal Kubernetes Microservice on AWS with Terraform and K3S!
+
+
 
 
 ## Step-05: Clean-Up:
