@@ -8,7 +8,7 @@ REST API for user management microservice with swagger UI is available on
 ## Step 01 - Setup terraform account on AWS 
 #### Note: skip to Step 02, if you already have working Terraform account with all permissions
 
-### Setting Up an AWS Operations Account
+#### Setting Up an AWS Operations Account
 
  - Log in to your AWS management console with your root user credentials. Once you’ve logged in, you should be presented with a list of AWS services. Find and select the IAM service.
 
@@ -20,7 +20,7 @@ REST API for user management microservice with swagger UI is available on
 
 - If everything looks OK to you, click the Create user button.
 
-### Access key and secret key
+#### Access key and secret key
 
 - Before we do anything else, we’ll need to make a note of our new user’s keys. Click the Show link and copy and paste both the “**Access key ID**” and the “**Secret access key**” into a temporary file. We’ll use both of these later in this section with our automated pipeline. Be careful with this key material as it will give whoever has it an opportunity to create resources in your AWS environment—at your expense.
 
@@ -28,7 +28,7 @@ REST API for user management microservice with swagger UI is available on
 
 - We have now created a user called **ops-account** with permission to make IAM changes. 
 
-### Configure the AWS CLI
+#### Configure the AWS CLI
 
 ```
 $ aws configure
@@ -64,7 +64,7 @@ $ aws iam list-users
 
 If you’ve done everything correctly, you should see a list of your AWS user accounts. That indicates that AWS CLI is working properly and has access to your instance. Now, we can set up the permissions our operations account will need.
 
-### Setting Up AWS Permissions
+#### Setting Up AWS Permissions
 
 The first thing we’ll do is make the ops-account user part of a new group called Ops-Accounts. That way we’ll be able to assign new users to the group if we want them to have the same permissions. Use the following command to create a new group called Ops-Accounts:
 
@@ -125,7 +125,7 @@ $ aws iam attach-group-policy --group-name Ops-Accounts \
    --policy-arn {YOUR_POLICY_ARN}
 ```
 
-### Creating an S3 Backend for Terraform
+#### Creating an S3 Backend for Terraform
 
 - If you are hosting your bucket in the us-east-1 region, use the following command:
 
