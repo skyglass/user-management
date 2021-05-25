@@ -6,7 +6,7 @@ REST API for user management microservice with swagger UI is available on
 # Microservices Deployment on AWS with Terraform and K3S:
 
 ## Step 01 - Setup terraform account on AWS 
-#### Note: skip to Step 02, if you already have working Terraform account with all permissions
+#### Skip to Step 02, if you already have working Terraform account with all permissions
 
 #### Setting Up an AWS Operations Account
 
@@ -170,7 +170,7 @@ dbpassword = "s00p3rS3cr3t"
 
 - make sure you provide correct path for "**public_key_path**" and "**private_key_path**"
 
-- make sure your provide correct "**certifcate_arn**" for your AWS certificate, registered to your domain. You need to register your domain and create certificate for your domain in AWS
+- make sure you provide correct "**certifcate_arn**" for your AWS certificate, registered to your domain. You need to register your domain and create certificate for your domain in AWS
 
 - replace "**skyglass-terraform**" in "**backends.tf**" with the name of your S3 bucket, created in "**Step 01**"
 
