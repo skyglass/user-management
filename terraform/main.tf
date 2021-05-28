@@ -41,6 +41,7 @@ module "loadbalancing" {
   elb_interval            = 30
   listener_port           = 80
   listener_protocol       = "HTTP"
+  certificate_arn         = var.certificate_arn
 }
 
 module "compute" {

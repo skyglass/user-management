@@ -45,7 +45,7 @@ resource "aws_lb_listener" "mtc_lb_listener" {
   port              = 443
   protocol          = "HTTPS"
   depends_on        = [aws_lb_target_group.mtc_tg]
-  certificate_arn = "arn:aws:acm:us-east-1:217264062492:certificate/7c3920b0-7377-4f0b-98b8-16a9000b630f"
+  certificate_arn   = var.certificate_arn
 
   default_action {
     type             = "forward"

@@ -32,3 +32,8 @@ variable "private_key_path" {
   type      = string
   sensitive = true
 }
+
+variable "certificate_arn" {
+  type      = string
+  sensitive = true
+}

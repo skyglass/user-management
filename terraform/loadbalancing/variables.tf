@@ -9,3 +9,4 @@ variable "elb_timeout" {}
 variable "elb_interval" {}
 variable "listener_port" {}
 variable "listener_protocol" {}
+variable "certificate_arn" {}
