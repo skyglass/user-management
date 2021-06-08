@@ -1,3 +1,12 @@
+### [Deprecated]
+#### !!!Warning!!!
+#### You can only deploy one microservice per-one Load Balancer with this setup!
+#### !!!Warning!!!
+
+#### Use this latest version, with Traefik Ingress Controller, instead:
+### https://github.com/skyglass-examples/customer-management-keycloak
+
+
 # User Management Microservice
 
 REST API for user management microservice with swagger UI is available on 
