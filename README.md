@@ -1,8 +1,8 @@
 ### [Deprecated]
 #### !!!Warning!!!
-#### You can only deploy one microservice per-one Load Balancer with this setup!
+#### You can only deploy one microservice per one Load Balancer with this setup!
 
-#### Use this updated setup, with Traefik Ingress Controller, instead:
+#### Try this updated setup, with Traefik Ingress Controller, instead:
 #### https://github.com/skyglass-examples/customer-management-keycloak
 
 
